@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+// var a=100
+// var b=200
+//
+// switch (a){
+// case 100:
+// alert("a=" +a);
+// switch (b){
+// case 200:
+// alert("b=" +b)
+// // }
+// }
+
+<!--</script>-->
+<!--<div id="demo"></div>-->
+<!--<button onclick="document.getElementById('demo').innerHTML = Date()">The time is</button>-->
+<script>
+    // let year = parseInt(prompt("Nhập năm vào đây"));
+    // if (year % 4 == 0) {
+    //     if (year % 100 == 0) {
+    //         if (year % 400 == 0){
+    //             alert(year + "is a leap year")
+    //     } else {
+    //         alert(year + "is NOT a leap year");
+    //     }
+    // } else {
+    //     alert(year + "is a leap year");
+    // }
+    // } else {
+    //     alert(year + " is NOT a leap year");
+    // }
+    let year = parseInt(prompt("Nhập năm vào đây"));
+    let isLapYear = false;
+
+    let isDivisibleBy4 = year % 4 == 0;
+    if (isDivisibleBy4){
+        let isDivisibleBy100 = year % 100 == 0;
+        if (isDivisibleBy100){
+            let isDivisbleBy400 = year % 400 == 0;
+            if (isDivisbleBy400){
+                isLapYear = true;
+            }
+        } else {
+            isLapYear = true;
+        }
+    }
+
+    if (isLapYear){
+        alert(year + "is a leap year");
+    }else {
+        alert(year + "is NOT a leap year");
+    }
+</script>
+</body>
+</html>
