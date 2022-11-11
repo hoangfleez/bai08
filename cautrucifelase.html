@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhap ten tai khoan")
+    if (input === "Admin") {
+        let password = prompt("Nhap mat khau")
+        if (password === "123") {
+            alert("Hello")
+        }
+        else if(password === ""){
+            alert("Canceled")
+        }
+        else {
+            alert("Sai mat khau")
+        }
+    }
+    else if (input === "") {
+        alert("Canceled")
+    }
+    else {
+        alert(" May la ai?")
+    }
+</script>
+</body>
+</html>
